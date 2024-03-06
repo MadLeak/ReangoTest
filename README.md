@@ -13,57 +13,55 @@ Reango is a web application built using Django (backend) and React with TypeScri
 
 **1. Setting Up the Backend:**
 
-**a. Create a Virtual Environment:**
-
-   ```bash
-   python3 -m virtualenv ./
-   source bin/activate  # Linux/macOS
-   Scripts\activate.bat  # Windows
-   ```
-
-**b. Install Requirements:**
-
-   1. Open a terminal or command prompt within the activated virtual environment.
-   2. Install necessary dependencies using the `requirements.txt` file:
-
-     ```bash
-     pip install -r requirements.txt
-     ```
-
-**c. Configuration:**
-
-   1. Create a `.env` file in the root directory of your project (same level as `manage.py`).
-   2. Fill in the following information, replacing placeholders with your actual values:
-
-     ```
-     # Django
-     SECRET_KEY=<Your generated secret key>  # Mandatory
-     DEBUG=True  # Optional, set to False for production
-     LANGUAGE_CODE=es-DO  # Optional but recommended (Spanish-Dominican Republic)
-     TIME_ZONE=America/Santo_Domingo  # Optional but recommended
-
-     # Database (Optional)
-     # If not provided, a SQLite3 database will be created locally
-     DB_NAME=<Database name>
-     DB_USER=<Database username>
-     DB_PASS=<Database password>
-     DB_HOST=<Database hostname/IP>
-     DB_PORT=<Database port (5432 for PostgreSQL)>
-     ```
-
-     **Generating a Secret Key:**
-
-     - Use a secure method like `python -c "import secrets; print(secrets.token_urlsafe(32))"` to create a random, unguessable secret key.
-     - Remember to keep this key confidential and **never** commit it to version control.
+   **a. Create a Virtual Environment:**
+   
+      ```bash
+      python3 -m virtualenv ./
+      source bin/activate  # Linux/macOS
+      Scripts\activate.bat  # Windows
+      ```
+   
+   **b. Install Requirements:**
+   
+      1. Open a terminal or command prompt within the activated virtual environment.
+      2. Install necessary dependencies using the `requirements.txt` file:
+         
+         ```bash
+         pip install -r requirements.txt
+         ```
+   
+   **c. Configuration:**
+   
+      1. Create a `.env` file in the root directory of your project (same level as `manage.py`).
+      2. Fill in the following information, replacing placeholders with your actual values:
+   
+           ```
+           # Django
+           SECRET_KEY=<Your generated secret key>  # Mandatory
+           DEBUG=True  # Optional, set to False for production
+           LANGUAGE_CODE=es-DO  # Optional but recommended (Spanish-Dominican Republic)
+           TIME_ZONE=America/Santo_Domingo  # Optional but recommended
+      
+           # Database (Optional)
+           # If not provided, a SQLite3 database will be created locally
+           DB_NAME=<Database name>
+           DB_USER=<Database username>
+           DB_PASS=<Database password>
+           DB_HOST=<Database hostname/IP>
+           DB_PORT=<Database port (5432 for PostgreSQL)>
+           ```
+   **Generating a Secret Key:**
+   - Use a secure method like `python -c "import secrets; print(secrets.token_urlsafe(32))"` to create a random, unguessable secret key.
+   - Remember to keep this key confidential and **never** commit it to version control.
 
 **2. Running the Backend:**
 
    1. From the terminal within your activated virtual environment, navigate to the project directory containing `manage.py`.
    2. Run the Django development server:
 
-     ```bash
-     python manage.py runserver
-     ```
+        ```bash
+        python manage.py runserver
+        ```
 
    - This will start the server, usually accessible at http://127.0.0.1:8000/ by default (adjust the port if necessary).
 
