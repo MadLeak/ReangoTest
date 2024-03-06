@@ -12,6 +12,7 @@ Reango is a web application built using Django (backend) and React with TypeScri
 **Instructions:**
 
 **1. Setting Up the Backend:**
+
 **a. Create a Virtual Environment:**
 
    ```bash
