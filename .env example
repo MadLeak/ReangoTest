@@ -1,0 +1,11 @@
+SECRET_KEY=django-insecure-@c4zxc$1%%38^5bvd9pa-5@7r-of^nat5y+h=qexg79whuv0@p
+DEBUG=True
+LANGUAGE_CODE=es-DO
+TIME_ZONE=America/Santo_Domingo
+
+Database
+DB_NAME= # Database name
+DB_USER= # Username
+DB_PASS= # Password
+DB_HOST= # Hostname/Address/IP
+DB_PORT= 5432 # Postgresql default port

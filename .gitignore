@@ -1,0 +1,39 @@
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Ignore local development environment
+.env
+*.sqlite3
+
+# Ignore Node.js dependencies
+node_modules/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+bin/*
+lib/*
+
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+
+
